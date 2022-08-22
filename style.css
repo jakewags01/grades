@@ -7,6 +7,38 @@ body {
     color: white;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > p {
+    margin-top: -10px;
+}
+
+#gradeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#updateGradesBtn {
+    background-color: white;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 15px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#updateGradesBtn:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border: 2px solid white;
+}
+
 .gradeselection {
     display: flex;
     justify-content: center;
