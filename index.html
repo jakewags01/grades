@@ -13,6 +13,7 @@
         <h1>Grade Settings</h1>
         <p>Enter the lowest percentage for each grade</p>
     </header>
+
     <form id="gradeForm">
         <div class="gradeselection">
             <div class="grade">
@@ -20,41 +21,75 @@
                     <a>A - </a>
                     <a id="aPercent">89.5%</a>
                 </div>
-                <input type="number" class="gradeInput" id="aGrade" placeholder="89.5">
+                <input type="number" class="input gradeInput" id="aGrade" placeholder="89.5">
             </div>
             <div class="grade">
                 <div>
                     <a>B - </a>
                     <a id="bPercent">79.5%</a>
                 </div>
-                <input type="number" class="gradeInput" id="bGrade" placeholder="79.5">
+                <input type="number" class="input gradeInput" id="bGrade" placeholder="79.5">
             </div>
             <div class="grade">
                 <div>
                     <a>C - </a>
                     <a id="cPercent">69.5%</a>
                 </div>
-                <input type="number" class="gradeInput" id="cGrade" placeholder="69.5">
+                <input type="number" class="input gradeInput" id="cGrade" placeholder="69.5">
             </div>
             <div class="grade">
                 <div>
                     <a>D - </a>
                     <a id="dPercent">59.5%</a>
                 </div>
-                <input type="number" class="gradeInput" id="dGrade" placeholder="59.5">
+                <input type="number" class="input gradeInput" id="dGrade" placeholder="59.5">
             </div>
             <div class="grade">
                 <div>
                     <a>F - </a>
                     <a id="fPercent">0%</a>
                 </div>
-                <input type="number" class="gradeInput" id="fGrade" placeholder="0">
+                <input type="number" class="input gradeInput" id="fGrade" placeholder="0">
             </div>
         </div>
-        <button type="button" id="updateGradesBtn">Update Percentages</button>
+        <button type="button" class="btn" id="updateGradesBtn">Update Percentages</button>
     </form>
-    <main>
+    <div>
+        <button type="button" class="btn" id="addClassBtn">Add Class</button>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="classname" id="c1">
+                <h1>SWENG 480</h1>
+                <div class="section">
+                    <div class="section-header">
+                        <button type="button" class="addAssignmentBtn">+</button>
+                        <h2 class="category">Quizzes</h2>
+                        <h2 class="cat-percent">20%</h2>
+                    </div>
+                    <div class="assignments">
+                        <div>
+                            <input type="text" class="input assignment-name">
+                            <input type="number" class="input assignment-input">
+                        </div>
+                        <div>
+                            <input type="text" class="input assignment-name">
+                            <input type="number" class="input assignment-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-header">
+                        <button type="button" class="addAssignmentBtn">+</button>
+                        <h2 class="category">Exams</h2>
+                        <h2 class="cat-percent">80%</h2>
+                    </div>
+                    <div class="assignments">
 
-    </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
