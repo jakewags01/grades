@@ -19,6 +19,16 @@ const fPercent = document.querySelector('#fPercent');
 const gradeBtn = document.querySelector('#updateGradesBtn');
 
 // class vars
+var classes = [];
+
+class Course {
+    constructor(name) {
+        this.name = name;
+    }
+    addSection() {
+        
+    }
+}
 
 // ---------------- Event Listeners ---------------- //
 
